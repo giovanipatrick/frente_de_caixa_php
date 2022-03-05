@@ -42,6 +42,13 @@
             text-decoration:none; 
             text-shadow: 1px 1px silver;
         }
+
+        .fa-size{
+            text-align:center !important;
+            width:27px !important;
+            height:20px !important;
+        }
+        
     </style>
 </head>
 <body>
@@ -55,7 +62,7 @@
 <div class="input-group mt-4">
     <div class="input-group-prepend text-center">
         <span class="input-group-text span-login p-2 border-0 rounded shadow">
-        <i class="fa-solid fa-user fa-2x text-light" aria-hidden="true"></i>
+        <i class="fa-solid fa-user fa-size text-light" aria-hidden="true"></i>
         </span>
     </div>
     <input type="text" class="form-control" placeholder="Digite o usuário..."/>
@@ -64,7 +71,7 @@
 <div class="input-group mt-1">
     <div class="input-group-prepend text-center">
         <span class="input-group-text span-login p-2 border-0 rounded shadow">
-        <i class="fa-solid fa-key fa-2x text-light" aria-hidden="true"></i>
+        <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
         </span>
     </div>
     <input type="text" class="form-control" placeholder="Digite a senha..."/>
