@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frente de Caixa - Project</title>
-    <link rel="stylesheet" href="App/Resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="App/Resources/css/all.min.css">
-    <link rel="stylesheet" href="App/Resources/css/project/login.css?v=<?php echo time();?>">
-    <script src="App/Resources/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="App/Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="App/Public/css/all.min.css">
+    <link rel="stylesheet" href="App/Public/css/project/login.css?v=<?php echo time();?>">
+    <script src="App/Public/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 <div class="div-login mx-auto text-center shadow-lg p-4 border border-secondary rounded">
 
 <div id="logo">
-    <img src="App/Resources/images/pdv_logo.png" class="img-fluid">
+    <img src="App/Public/images/pdv_logo.png" class="img-fluid">
 </div>
 
 <div class="input-group mt-4">
@@ -46,6 +46,6 @@
 
 </div>
 
-<script src="App/Resources/js/project/login.js?v=<?php echo time();?>"></script>
+<script src="App/Public/js/project/login.js?v=<?php echo time();?>"></script>
 </body>
 </html>
