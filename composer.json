@@ -1,0 +1,19 @@
+{
+    "name": "giovanipatrick/frentecaixa",
+    "description": "Um simples sistema frente de caixa feito em PHP",
+    "type": "project",
+    "require": {
+        "pecee/simple-router": "4.3.7.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Giovani Patrick",
+            "email": "giovani@diminua.me"
+        }
+    ]
+}
