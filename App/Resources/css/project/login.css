@@ -1,7 +1,8 @@
 body{
-    background-image:url('../../images/pdv_bg.png'); 
-    background-size: cover; 
-    background-repeat:repeat-y; 
+    background-image:url('../../images/pdv_bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
     background-color:#2a9df4;
 }
 
@@ -40,3 +41,10 @@ body,.input-group-text,.btn,.form-control{
     height:48px !important;
     width:48px !important;
 }
+
+@media (max-width:768px){
+    .div-login{
+        max-width:80% !important;
+    }
+
+ }
