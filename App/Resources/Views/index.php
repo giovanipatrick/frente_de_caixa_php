@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="App/Resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="App/Resources/css/all.min.css">
     <script src="App/Resources/js/bootstrap.bundle.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
 
         body{
@@ -18,7 +19,7 @@
         }
 
         body,.input-group-text,.btn,.form-control{
-            font-family: sans-serif !important;
+            font-family: Arial, Helvetica, sans-serif !important;
             font-size: 15px !important;
         }
 
@@ -26,19 +27,18 @@
             width:45px;
         }
 
-        .span-login, .btn-login{
-            text-shadow: 1px 1px black; 
-            background-color:#2a9df4;
+        .span-login, .btn-login, .swal2-confirm{
+            text-shadow: 1px 1px silver !important; 
+            background-color:#2a9df4 !important;
         }
 
         .div-login{
             max-width: 30%; 
             margin-top:11%; 
-            background-color:#C0C0C0cc;
+            background-color:#FFEFD5cc;
         }
 
         .a-cad{
-            font-weight:bold; 
             text-decoration:none; 
             text-shadow: 1px 1px silver;
         }
@@ -70,14 +70,20 @@
     <input type="text" class="form-control" placeholder="Digite a senha..."/>
 </div>
 
-<button type="submit" class="fw-bold btn-login mt-2 p-2 btn rounded shadow text-light">
-Autenticar
+<button type="submit" class="btn-login mt-2 p-2 btn rounded shadow text-light" onclick="errorMessage()">
+        <i class="fa-solid fa-arrow-right-to-bracket fa-2x text-light" aria-hidden="true"></i>
 </button>
 
 <hr>
 <a href="#" class="a-cad">Não possui conta? <br>Cadastre-se agora!</a>
 
 </div>
+
+<script>
+function errorMessage(){
+    Swal.fire('Tela ainda não concluída','O projeto está em desenvolvimento!','info');
+}
+</script>
 
     
 </body>
