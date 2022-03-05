@@ -7,49 +7,9 @@
     <title>Frente de Caixa - Project</title>
     <link rel="stylesheet" href="App/Resources/css/bootstrap.min.css">
     <link rel="stylesheet" href="App/Resources/css/all.min.css">
+    <link rel="stylesheet" href="App/Resources/css/project/login.css?v=<?php echo time();?>">
     <script src="App/Resources/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-
-        body{
-            background-image:url('App/Resources/images/pdv_bg.png'); 
-            background-size: cover; 
-            background-repeat:repeat-y; 
-            background-color:#2a9df4;
-        }
-
-        body,.input-group-text,.btn,.form-control{
-            font-family: Arial, Helvetica, sans-serif !important;
-            font-size: 15px !important;
-        }
-
-        .input-group-text{
-            width:45px;
-        }
-
-        .span-login, .btn-login, .swal2-confirm{
-            text-shadow: 1px 1px silver !important; 
-            background-color:#2a9df4 !important;
-        }
-
-        .div-login{
-            max-width: 30%; 
-            margin-top:11%; 
-            background-color:#FFEFD5cc;
-        }
-
-        .a-cad{
-            text-decoration:none; 
-            text-shadow: 1px 1px silver;
-        }
-
-        .fa-size{
-            text-align:center !important;
-            width:27px !important;
-            height:20px !important;
-        }
-        
-    </style>
 </head>
 <body>
 
@@ -86,12 +46,6 @@
 
 </div>
 
-<script>
-function errorMessage(){
-    Swal.fire('Tela ainda não concluída','O projeto está em desenvolvimento!','info');
-}
-</script>
-
-    
+<script src="App/Resources/js/project/login.js?v=<?php echo time();?>"></script>
 </body>
 </html>
