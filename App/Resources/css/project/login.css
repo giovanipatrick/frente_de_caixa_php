@@ -35,3 +35,8 @@ body,.input-group-text,.btn,.form-control{
     width:27px !important;
     height:20px !important;
 }
+
+.btn-login{
+    height:48px !important;
+    width:48px !important;
+}
