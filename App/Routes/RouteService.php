@@ -3,6 +3,7 @@
 namespace App\Routes;
 use Pecee\SimpleRouter\SimpleRouter as Route;
 use App\Http\Controllers\CoreController;
+use App\Resources\Views\UndefinedRoute;
 
 /*
     Sistema de Rotas
@@ -15,7 +16,7 @@ class RouteService extends Route{
         Route::get('/',[CoreController::class,'index']);
         
         Route::error(function(){
-            echo 'Ocorreu um erro 404';
+            return UndefinedRoute::notExists();
         });
 
         Route::start();
