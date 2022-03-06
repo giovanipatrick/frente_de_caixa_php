@@ -22,6 +22,10 @@ namespace App\Helpers;
             session_regenerate_id();
         }
 
+        public static function armazenar($tipo,$key,$value){
+           $_SESSION[$tipo][$key] = $value;
+        }
+
     }
 
 

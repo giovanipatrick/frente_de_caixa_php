@@ -21,7 +21,7 @@ class RouteService extends Route{
         // API
         Route::group(['prefix'=>'/api/v1'],function(){
 
-            Route::get('/autenticar',[UsuarioController::class,'autenticar']);
+            Route::post('/autenticar',[UsuarioController::class,'autenticar']);
             Route::post('/registrar',[UsuarioController::class,'registrar']);
 
         });

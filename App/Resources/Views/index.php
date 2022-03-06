@@ -51,7 +51,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <div class="modal-title" id="cadastroModalLabel">
+        <div class="modal-title mx-auto text-center" id="cadastroModalLabel">
             <img src="/App/Public/images/pdv_cade.png" class="img-fluid" id="img-cad">
         </div>
       </div>
