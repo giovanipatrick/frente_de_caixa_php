@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frente de Caixa - Project</title>
-    <link rel="stylesheet" href="App/Public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="App/Public/css/all.min.css">
-    <link rel="stylesheet" href="App/Public/css/project/login.css?v=<?php echo time();?>">
-    <script src="App/Public/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/App/Public/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/App/Public/css/all.min.css">
+    <link rel="stylesheet" href="/App/Public/css/project/login.css?v=<?php echo time();?>">
+    <script src="/App/Public/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
 <form class="div-login mx-auto text-center shadow-lg p-4 border border-secondary rounded" action="javascript:void(0);">
 
 <div id="logo">
-    <img src="App/Public/images/pdv_logo.png" class="img-fluid">
+    <img src="/App/Public/images/pdv_logo.png" class="img-fluid">
 </div>
 
 <div class="input-group mt-4">
@@ -52,7 +52,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div class="modal-title" id="cadastroModalLabel">
-            <img src="App/Public/images/pdv_cade.png" class="img-fluid" id="img-cad">
+            <img src="/App/Public/images/pdv_cade.png" class="img-fluid" id="img-cad">
         </div>
       </div>
       <div class="modal-body">
@@ -114,6 +114,6 @@
 </div>
 <!-- Fim Modal de Cadastro -->
 
-<script src="App/Public/js/project/login.js?v=<?php echo time();?>"></script>
+<script src="/App/Public/js/project/login.js?v=<?php echo time();?>"></script>
 </body>
 </html>
