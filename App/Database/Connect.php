@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Database;
+use PDO;
+use PDOException;
 
 class Connect{
 
@@ -13,12 +15,18 @@ class Connect{
 
 
     public function __construct(){
-        $this->host = DB_SERVER;
-        $this->port = DB_PORT;
-        $this->db =  DB_NAME;
-        $this->user = DB_USER;
-        $this->pass = DB_PASS;
-        $this->stmt = new \PDO("mysql:host=$this->host;port=$this->port;dbname=$this->db;charset=utf8","$this->user","$this->pass");
-    }
+        $this->host = "localhost";
+        $this->port = "3306";
+        $this->db =  "frente_caixa";
+        $this->user = "root";
+        $this->pass = "kratos.2010";
+        try {
+            $this->stmt = new PDO("mysql:host=$this->host;port=$this->port;dbname=$this->db;charset=utf8","$this->user","$this->pass");
+            return true;
+        }catch(PDOException $error){
+            //print_r($error);
+        }
 
+    }
 }
+

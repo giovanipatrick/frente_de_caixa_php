@@ -39,8 +39,27 @@ function validaRegistro(){
     A função registrar() só é invocada após a verificação dos dados através da função validaRegistro()
     O EventListener responsável é btn_cadastro
 */
-function registrar(){
-    console.log('Registrado');
+async function registrar(){
+    try {
+        let reqData = new URLSearchParams;
+        reqData.append('username',user_cad.value);
+        reqData.append('email',email_cad.value);
+        reqData.append('password',pass_cad.value);
+        reqData.append('confirm',pass_cad_t.value);
+        let response = await axios.post('/api/v1/registrar',reqData);
+        let data = response.data;
+            switch(data.type){
+                case "success":
+                    Swal.fire('Tudo OK',data.message,'success');
+                break;
+
+                case "error":
+                    Swal.fire('Ocorreu um erro',data.message,'error');
+                break;
+            }
+    } catch (error) {
+        Swal.fire('Ocorreu um erro','Não foi possível completar a requisição, tente novamente mais tarde!','error');
+    }
 }
 
 /*

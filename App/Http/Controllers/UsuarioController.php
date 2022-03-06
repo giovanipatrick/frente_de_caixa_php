@@ -26,9 +26,9 @@ use Exception;
                 try {
                     $sessionInformation = $this->usuarioModel->autenticar();
                     SessionManager::armazenar('usuario','id',$sessionInformation[0]['id']);
-                    AjaxReturn::data('success','Usuário autenticado com sucesso, aguarde alguns segundos...');
+                    return AjaxReturn::data('success','Usuário autenticado com sucesso, aguarde alguns segundos...');
                 } catch (Exception $e) {
-                   AjaxReturn::data('error',$e->getMessage());
+                   return AjaxReturn::data('error',$e->getMessage());
                 }
             }
         }
@@ -39,9 +39,9 @@ use Exception;
             }else{
                 try {
                     $this->usuarioModel->registrar();
-                    AjaxReturn::data('success','O usuário informado foi cadastrado com sucesso!');
+                    return AjaxReturn::data('success','O usuário informado foi cadastrado com sucesso!');
                 } catch (Exception $e) {
-                    AjaxReturn::data('error',$e->getMessage());
+                    return AjaxReturn::data('error',$e->getMessage());
                 }
             }
         }

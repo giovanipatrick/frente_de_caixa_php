@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/App/Public/css/project/login.css?v=<?php echo time();?>">
     <script src="/App/Public/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
 

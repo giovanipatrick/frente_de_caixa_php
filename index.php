@@ -2,5 +2,9 @@
 require 'vendor/autoload.php';
 use App\Helpers\LoadEnv;
 use App\Routes\RouteService;
-LoadEnv::transform();
+try {
+    LoadEnv::transform();
 RouteService::initiate();
+} catch (\Throwable $th) {
+    echo $th->getMessage();
+}
