@@ -14,19 +14,19 @@ class RouteService extends Route{
 
     public static function initiate(){
 
-        // Route da View
+        // Views
         Route::get('/',[CoreController::class,'index']);
+        Route::get('/deslogar',[UsuarioController::class,'deslogar']);
 
-        // Route da API
+        // API
         Route::group(['prefix'=>'/api/v1'],function(){
 
-            Route::post('/autenticar',[UsuarioController::class,'autenticar']);
+            Route::get('/autenticar',[UsuarioController::class,'autenticar']);
             Route::post('/registrar',[UsuarioController::class,'registrar']);
-            Route::post('/deslogar',[UsuarioController::class,'deslogar']);
 
         });
         
-        // Error Route
+        // Error
         Route::error(function(){
             return UndefinedRoute::notExists();
         });

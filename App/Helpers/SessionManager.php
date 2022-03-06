@@ -8,6 +8,10 @@ namespace App\Helpers;
             session_start();
         }
 
+        public static function get(){
+            return $_SESSION;
+        }
+
         public static function destroy(){
             $_SESSION = array();
             unset($_SESSION);
