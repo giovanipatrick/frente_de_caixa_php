@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="div-login mx-auto text-center shadow-lg p-4 border border-secondary rounded">
+<form class="div-login mx-auto text-center shadow-lg p-4 border border-secondary rounded" action="javascript:void(0);">
 
 <div id="logo">
     <img src="App/Public/images/pdv_logo.png" class="img-fluid">
@@ -25,7 +25,7 @@
         <i class="fa-solid fa-user fa-size text-light" aria-hidden="true"></i>
         </span>
     </div>
-    <input type="text" class="form-control" placeholder="Digite o usuário..."/>
+    <input type="text" id="usuario" class="form-control" placeholder="Digite o usuário..." required/>
 </div>
 
 <div class="input-group mt-1">
@@ -34,14 +34,18 @@
         <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
         </span>
     </div>
-    <input type="password" class="form-control" placeholder="Digite a senha..."/>
+    <input type="password" id="senha" class="form-control" placeholder="Digite a senha..." required/>
 </div>
 
-<button type="submit" class="btn-login mt-2 p-2 btn rounded shadow text-light" onclick="errorMessage()">
+<button type="submit" class="btn-login mt-2 p-2 btn rounded shadow text-light">
         <i class="fa-solid fa-arrow-right-to-bracket fa-2x text-light" aria-hidden="true"></i>
 </button>
 
 <hr>
+
+<a href="#" class="a-cad" data-bs-toggle="modal" data-bs-target="#cadastroModal">Não possui conta? <br>Cadastre-se agora!</a>
+</form>
+
 <!-- Modal de Cadastro -->
 <div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -53,7 +57,7 @@
       </div>
       <div class="modal-body">
         
-        <div class="d-block mx-auto text-center w-50">
+        <form class="d-block mx-auto text-center w-50" action="javascript:void(0);">
 
             <!-- Usuário -->
             <div class="input-group">
@@ -62,7 +66,7 @@
                         <i class="fa-solid fa-user fa-size text-light" aria-hidden="true"></i>
                     </span>
                 </div>
-                <input class="form-control" type="text" id="user_cad" placeholder="Usuário"/>
+                <input class="form-control" type="text" id="user_cad" placeholder="Usuário" required/>
             </div>
 
             <!-- Email -->
@@ -72,7 +76,7 @@
                         <i class="fa-solid fa-envelope fa-size text-light" aria-hidden="true"></i>
                     </span>
                 </div>
-                <input class="form-control" type="text" id="email_cad" placeholder="Email"/>
+                <input class="form-control" type="email" id="email_cad" placeholder="Email" required/>
             </div>
 
             <!-- Password -->
@@ -82,7 +86,7 @@
                         <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
                     </span>
                 </div>
-                <input class="form-control" type="password" id="pass_cad" placeholder="Senha"/>
+                <input class="form-control" type="password" id="pass_cad" placeholder="Senha" required/>
             </div>
 
             <!-- Password Confirmação -->
@@ -92,26 +96,23 @@
                         <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
                     </span>
                 </div>
-                <input class="form-control" type="password" id="pass_cad_t" placeholder="Confirme a Senha"/>
+                <input class="form-control" type="password" id="pass_cad_t" placeholder="Confirme a Senha" required/>
             </div>
-
-        </div>
 
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-cadastro span-login mt-2 p-2 btn rounded shadow text-light">
+        <button type="submit" class="btn btn-cadastro span-login mt-2 p-2 btn rounded shadow text-light">
             <i class="fa-regular fa-circle-check fa-2x text-light" aria-hidden="true"></i>
         </button>
         <button type="button" class="btn btn-fechar mt-2 p-2 rounded shadow text-light" data-bs-dismiss="modal" aria-label="Close">
             <i class="fa-regular fa-circle-xmark fa-2x text-light" aria-hidden="true"></i>
         </button>
+        </form>
       </div>
     </div>
   </div>
 </div>
 <!-- Fim Modal de Cadastro -->
-<a href="#" class="a-cad" data-bs-toggle="modal" data-bs-target="#cadastroModal">Não possui conta? <br>Cadastre-se agora!</a>
-</div>
 
 <script src="App/Public/js/project/login.js?v=<?php echo time();?>"></script>
 </body>
