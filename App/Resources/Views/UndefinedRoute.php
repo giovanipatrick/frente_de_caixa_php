@@ -19,38 +19,12 @@ namespace App\Resources\Views;
     <link rel="stylesheet" href="App/Public/css/project/404.css?v=<?php echo time();?>">
     <script src="App/Public/js/bootstrap.bundle.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <style>
-
-        body{
-            background-repeat: no-repeat;
-            background-attachment: fixed; 
-            background-size: 100% 100%;
-            background-color: #2a9df4cc;
-            font-family:Arial, Helvetica, sans-serif;
-            font-size: 12px;
-            font-weight: bold;
-        }
-
-        .container{
-            width:50%;
-            height: 50%;
-            margin-top:11%; 
-            background: #D3CCE3;  
-            background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
-            background: linear-gradient(to right, #E9E4F0, #D3CCE3); 
-
-        }
-
-        a{
-            text-decoration: none;
-        }
-    </style>
 </head>
 <body>
             <div class="mx-auto text-center">
                 <div class="container shadow-lg border border-secondary rounded p-5">
                     <div id="img-logo">
-                        <img src="App/Public/svgs/project/pdv_error.svg" class="img-fluid" style="width:30%;">
+                        <img src="App/Public/svgs/project/pdv_error.svg" class="img-fluid">
                     </div>
                     <br>
                     <hr>

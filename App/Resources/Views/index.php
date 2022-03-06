@@ -34,7 +34,7 @@
         <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
         </span>
     </div>
-    <input type="text" class="form-control" placeholder="Digite a senha..."/>
+    <input type="password" class="form-control" placeholder="Digite a senha..."/>
 </div>
 
 <button type="submit" class="btn-login mt-2 p-2 btn rounded shadow text-light" onclick="errorMessage()">
@@ -42,8 +42,75 @@
 </button>
 
 <hr>
-<a href="#" class="a-cad">Não possui conta? <br>Cadastre-se agora!</a>
+<!-- Modal de Cadastro -->
+<div class="modal fade" id="cadastroModal" tabindex="-1" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div class="modal-title" id="cadastroModalLabel">
+            <img src="App/Public/images/pdv_cade.png" class="img-fluid" id="img-cad">
+        </div>
+      </div>
+      <div class="modal-body">
+        
+        <div class="d-block mx-auto text-center w-50">
 
+            <!-- Usuário -->
+            <div class="input-group">
+                <div class="input-group-prepend text-center">
+                    <span class="input-group-text span-login p-2 border-0 rounded shadow">
+                        <i class="fa-solid fa-user fa-size text-light" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <input class="form-control" type="text" id="user_cad" placeholder="Usuário"/>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group mt-1">
+                <div class="input-group-prepend text-center">
+                    <span class="input-group-text span-login p-2 border-0 rounded shadow">
+                        <i class="fa-solid fa-envelope fa-size text-light" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <input class="form-control" type="text" id="email_cad" placeholder="Email"/>
+            </div>
+
+            <!-- Password -->
+            <div class="input-group mt-1">
+                <div class="input-group-prepend text-center">
+                    <span class="input-group-text span-login p-2 border-0 rounded shadow">
+                        <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <input class="form-control" type="password" id="pass_cad" placeholder="Senha"/>
+            </div>
+
+            <!-- Password Confirmação -->
+            <div class="input-group mt-1">
+                <div class="input-group-prepend text-center">
+                    <span class="input-group-text span-login p-2 border-0 rounded shadow">
+                        <i class="fa-solid fa-key fa-size text-light" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <input class="form-control" type="password" id="pass_cad_t" placeholder="Confirme a Senha"/>
+            </div>
+
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-cadastro span-login mt-2 p-2 btn rounded shadow text-light">
+            <i class="fa-regular fa-circle-check fa-2x text-light" aria-hidden="true"></i>
+        </button>
+        <button type="button" class="btn btn-fechar mt-2 p-2 rounded shadow text-light" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-regular fa-circle-xmark fa-2x text-light" aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Fim Modal de Cadastro -->
+<a href="#" class="a-cad" data-bs-toggle="modal" data-bs-target="#cadastroModal">Não possui conta? <br>Cadastre-se agora!</a>
 </div>
 
 <script src="App/Public/js/project/login.js?v=<?php echo time();?>"></script>

@@ -8,7 +8,7 @@ use App\Interfaces\PartialsInterface;
 */
     class Footer implements PartialsInterface{
 
-        public static function include(){
+        public static function include($params = null){
             ?>
     </body>
     </html>

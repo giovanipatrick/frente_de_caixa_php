@@ -4,6 +4,6 @@ namespace App\Interfaces;
 
 interface PartialsInterface{
 
-    public static function include();
+    public static function include($params);
 
 }

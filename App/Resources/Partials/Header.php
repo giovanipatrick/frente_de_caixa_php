@@ -8,7 +8,7 @@ use App\Interfaces\PartialsInterface;
 */
     class Header implements PartialsInterface{
 
-        public static function include(){
+        public static function include($params = null){
             ?>
     <!DOCTYPE html>
     <html lang="pt_br">

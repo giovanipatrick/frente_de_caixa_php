@@ -1,5 +1,4 @@
 body{
-    background-image:url('../../images/pdv_bg.png');
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
@@ -24,7 +23,15 @@ body,.input-group-text,.btn,.form-control{
 .div-login{
     max-width: 30%; 
     margin-top:11%; 
-    background-color:#FFEFD5cc;
+    background: #D3CCE3cc;  
+    background: -webkit-linear-gradient(to right, #E9E4F0cc, #D3CCE3cc);  
+    background: linear-gradient(to right, #E9E4F0cc, #D3CCE3cc); 
+}
+
+.modal-dialog,.modal-content,.modal-header,.modal-footer{
+    background: #D3CCE3cc;  
+    background: -webkit-linear-gradient(to right, #E9E4F0cc, #D3CCE3cc);  
+    background: linear-gradient(to right, #E9E4F0cc, #D3CCE3cc); 
 }
 
 .a-cad{
@@ -43,8 +50,17 @@ body,.input-group-text,.btn,.form-control{
     width:48px !important;
 }
 
+.btn-fechar{
+    background-color: #FF5733;
+}
+
 .swal2-html-container,.swal2-title{
     font-size: 14px !important;
+}
+
+#img-cad{
+    max-width: 50%;
+    max-height:50%;
 }
 
 @media (max-width:768px){
