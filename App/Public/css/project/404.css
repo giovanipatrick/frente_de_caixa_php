@@ -3,9 +3,9 @@
             background-repeat: no-repeat;
             background-attachment: fixed; 
             background-size: 100% 100%;
-            background: #232526cc; 
-            background: -webkit-linear-gradient(to right, #414345, #232526cc);  
-            background: linear-gradient(to right, #414345, #232526cc); 
+            background: #232526; 
+            background: -webkit-linear-gradient(to right, #414345, #232526);  
+            background: linear-gradient(to right, #414345, #232526); 
             font-family:Arial, Helvetica, sans-serif;
             font-size: 12px;
             font-weight: bold;

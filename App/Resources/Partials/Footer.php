@@ -10,6 +10,9 @@ use App\Interfaces\PartialsInterface;
 
         public static function include($params = null){
             ?>
+    <footer class="footer text-light mx-auto text-center">
+        &copy; Todos os Direitos Reservados - Frente de Caixa PHP LTDA.
+    </footer>
     </body>
     </html>
             <?php

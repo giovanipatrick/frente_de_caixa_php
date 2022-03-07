@@ -11,10 +11,10 @@ body,.input-group-text,.btn,.form-control{
     font-weight: bold;
 }
 
-.bg-nav{
-    background: #232526cc; 
-    background: -webkit-linear-gradient(to right, #414345, #232526cc);  
-    background: linear-gradient(to right, #414345, #232526cc); 
+.bg-nav,.footer{
+    background: #232526; 
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
 }
 
 .fa-size{
@@ -37,6 +37,13 @@ body,.input-group-text,.btn,.form-control{
     background: #D3CCE3;  
     background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
     background: linear-gradient(to right, #E9E4F0, #D3CCE3); 
+}
+
+.footer{
+    position:fixed;
+    bottom:0 !important;
+    right:0 !important;
+    left:0 !important;
 }
 
 
