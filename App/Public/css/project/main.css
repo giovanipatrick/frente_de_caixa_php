@@ -1,0 +1,62 @@
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+    background-color: #E9E4F0; 
+}
+
+body,.input-group-text,.btn,.form-control{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.bg-nav{
+    background: #232526cc; 
+    background: -webkit-linear-gradient(to right, #414345, #232526cc);  
+    background: linear-gradient(to right, #414345, #232526cc); 
+}
+
+.fa-size{
+    text-align:center !important;
+    width:27px !important;
+    height:20px !important;
+}
+
+
+.swal2-html-container,.swal2-title{
+    font-size: 14px !important;
+}
+
+#img-brand,.img-content{
+    max-width:260px;
+    max-height:120px;
+}
+
+.d-modulo{
+    background: #D3CCE3;  
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); 
+}
+
+
+li{
+    list-style: none;
+}
+
+li>a{
+    text-decoration:none;
+}
+
+
+@media (max-width:768px){
+    .modulos_disp{
+        display:block !important;
+    }
+    
+    .d-modulo{
+        margin-right: auto !important;
+        margin-left: auto !important;
+        text-align:center !important;
+    }
+}

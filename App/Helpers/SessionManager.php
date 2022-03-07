@@ -5,7 +5,7 @@ namespace App\Helpers;
     class SessionManager{
 
         public static function start(){
-            session_start();
+            session_start(['cookie_secure' => true,'cookie_httponly' => true]);
         }
 
         public static function get(){

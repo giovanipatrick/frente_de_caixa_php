@@ -2,7 +2,9 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-size: 100% 100%;
-    background-color:#2a9df4;
+    background: #232526cc; 
+    background: -webkit-linear-gradient(to right, #414345, #232526cc);  
+    background: linear-gradient(to right, #414345, #232526cc); 
 }
 
 body,.input-group-text,.btn,.form-control{
