@@ -83,8 +83,28 @@ function validaLogin(){
     Só é invocada após a verificação dos dados através da função validaLogin()
     O EventListener responsável é btn_login
 */
-function autenticar(){
-    console.log('Autenticado');
+async function autenticar(){
+    try {
+        let reqData = new URLSearchParams;
+        reqData.append('username',usuario.value);
+        reqData.append('password',senha.value);
+        let response = await axios.post('/api/v1/autenticar',reqData);
+        let data = response.data;
+            switch(data.type){
+                case "success":
+                    Swal.fire('Tudo OK',data.message,'success');
+                    setTimeout(()=>{
+                        window.location.href='/home';
+                    },1400);
+                break;
+
+                case "error":
+                    Swal.fire('Ocorreu um erro',data.message,'error');
+                break;
+            }
+    } catch (error) {
+        Swal.fire('Ocorreu um erro','Não foi possível completar a requisição, tente novamente mais tarde!','error');
+    }
 }
 
 

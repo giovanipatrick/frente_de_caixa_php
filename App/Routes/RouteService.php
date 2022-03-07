@@ -16,6 +16,7 @@ class RouteService extends Route{
 
         // Views
         Route::get('/',[CoreController::class,'index']);
+        Route::get('/home',[CoreController::class,'home']);
         Route::get('/deslogar',[UsuarioController::class,'deslogar']);
 
         // API

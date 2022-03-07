@@ -11,5 +11,9 @@ use App\Http\Middlewares\AuthMiddleware;
             AuthMiddleware::outTemplate('index.php');
         }
 
+        public function home(){
+            AuthMiddleware::renderTemplate('home.php');
+        }
+
 
     }
