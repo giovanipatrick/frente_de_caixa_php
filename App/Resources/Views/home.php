@@ -12,19 +12,19 @@ Header::include();
         <h5 class="title_modulo mt-3">Gestão Empresarial</h5>
         <ul>
             <li>
-                <a href="#">Funcionários</a>
+                <a href="/funcionarios">Funcionários</a>
             </li>
             <li>
-                <a href="#">Clientes</a>
+                <a href="/clientes">Clientes</a>
             </li>
             <li>
-                <a href="#">Produtos</a>
+                <a href="/produtos">Produtos</a>
             </li>
             <li>
-                <a href="#">Classificações</a>
+                <a href="/classificacoes">Classificações</a>
             </li>
             <li>
-                <a href="#">Relatórios Empresariais</a>
+                <a href="/relatorios_empresariais">Relatórios Empresariais</a>
             </li>
         </ul>
     </div>
@@ -34,16 +34,16 @@ Header::include();
         <h5 class="title_modulo mt-3">Gestão Financeira</h5>
         <ul>
             <li>
-                <a href="#">Frente de Caixa</a>
+                <a href="/frente_de_caixa">Frente de Caixa</a>
             </li>
             <li>
-                <a href="#">Formas de Pagamento</a>
+                <a href="/formas_de_pagamento">Formas de Pagamento</a>
             </li>
             <li>
-                <a href="#">Dashboard Financeira</a>
+                <a href="/dashboard_financeira">Dashboard Financeira</a>
             </li>
             <li>
-                <a href="#">Relatórios Financeiros</a>
+                <a href="/relatorios_financeiros">Relatórios Financeiros</a>
             </li>
         </ul>
     </div>
@@ -53,13 +53,13 @@ Header::include();
         <h5 class="title_modulo mt-3">Configurações do Sistema</h5>
         <ul>
             <li>
-                <a href="#">Minha Conta</a>
+                <a href="/minha_conta">Minha Conta</a>
             </li>
             <li>
-                <a href="#">Minhas Preferências</a>
+                <a href="/minhas_preferencias">Minhas Preferências</a>
             </li>
             <li>
-                <a href="#">Relatar um Problema</a>
+                <a href="/relatar_problema">Relatar um Problema</a>
             </li>
             <li>
                 <a href="/deslogar">Sair</a>
